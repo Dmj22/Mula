@@ -16,7 +16,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-var url= "mongodb+srv://dmj22:EwYCZ2oUvmg8E2FH@mula.u80udg2.mongodb.net/?retryWrites=true&w=majority";
+var uri= "mongodb+srv://dmj22:EwYCZ2oUvmg8E2FH@mula.u80udg2.mongodb.net/?retryWrites=true&w=majority";
 
 mongoose.connect(url, {useNewUrlPasrser: true});
 var db = mongoose.connection;
