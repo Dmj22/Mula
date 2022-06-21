@@ -18,7 +18,7 @@ app.use(express.static("public"));
 
 var uri= "mongodb+srv://dmj22:EwYCZ2oUvmg8E2FH@mula.u80udg2.mongodb.net/?retryWrites=true&w=majority";
 
-mongoose.connect(url, {useNewUrlPasrser: true});
+mongoose.connect(uri, {useNewUrlPasrser: true});
 var db = mongoose.connection;
 
 // routes
